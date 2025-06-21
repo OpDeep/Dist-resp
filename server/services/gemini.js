@@ -4,7 +4,7 @@ import { logger } from '../middleware/middleware.js';
 export class GeminiService {
   constructor(cacheService) {
     this.cache = cacheService;
-    this.hfToken = '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';
+    this.hfToken = process.env.GEMINI_API_KEY;
     this.textModel = 'dslim/bert-base-NER'; // Hugging Face model for NER
     this.imageModel = 'google/vit-base-patch16-224'; // Optional: change based on need
   }
