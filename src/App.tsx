@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { AlertTriangle, MapPin, Users, MessageCircle, Shield, Plus, Search, RefreshCw } from 'lucide-react';
 import { io } from 'socket.io-client';
 
-const API_BASE = 'http://localhost:3001/api';
-const socket = io('http://localhost:3001');
+const API_BASE = 'https://dist-resp.onrender.com/api';
+const socket = io('https://dist-resp.onrender.com/');
 
 interface Disaster {
   id: string;
